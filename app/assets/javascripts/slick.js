@@ -919,6 +919,9 @@
             loadImages(cloneRange);
         }
 
+        if (_.options.customLoader) {
+            _.options.customLoader(_, loadRange);
+        }
     };
 
     Slick.prototype.loadSlider = function() {
